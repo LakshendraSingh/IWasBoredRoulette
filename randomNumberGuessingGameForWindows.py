@@ -2,8 +2,21 @@ import os
 import random
 import subprocess
 import platform
+import sys
 
 system = platform.system()
+if system == "Windows":
+    import ctypes
+    if not ctypes.windll.shell32.IsUserAnAdmin():
+        print("Please run as Administrator.")
+        sys.exit(1)
+elif system in ("Linux", "Darwin"):
+    if os.geteuid() != 0:
+        print("Please run with sudo.")
+        sys.exit(1)
+
+print("Running with elevated privileges.")
+
 initialValue = 0
 finalValue = 7
 x = random.randint(initialValue, finalValue)
