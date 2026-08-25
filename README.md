@@ -32,7 +32,7 @@ The script performs the following sequence:
    - The program exits if the required privileges are unavailable.
 3. **Randomization**
    - Generates a random integer between **0 and 7 inclusive**.
-   - Note that the input prompt incorrectly tells the user to select a number between 0 and 6.
+   - Note that the input prompt *intentionally* tells the user to select a number between 0 and 6.
 4. **User Input**
    - The user supplies an integer guess.
 5. **Comparison**
