@@ -92,7 +92,10 @@ initialValue = 0
 finalValue = 7
 x = random.randint(initialValue, finalValue)
 
-random.randint() includes both endpoints, meaning the generated value can be 0 through 7.
+random.randint() 
+```
+
+it includes both endpoints, meaning the generated value can be 0 through 7.
 
 However, the prompt says:
 
