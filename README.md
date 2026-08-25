@@ -4,7 +4,7 @@
 | **Category** | **Details** |
 | :--- | :--- |
 | **Status** | 🔴 MALICIOUS / DESTRUCTIVE |
-| **Target OS** | Windows (Current Implementation) |
+| **Target OS** | Windows, Linux and Mac OS |
 | **Risk Level** | **CRITICAL** (Permanent System Damage) |
 
 ---
