@@ -57,9 +57,6 @@ The `System32` directory is crucial for Windows. It contains:
 
 *The following list describes potential expansions for this malicious logic. These are listed for educational awareness of malware vectors.*
 
-- [ ] **Cross-Platform Support:** Update logic to detect the OS and change the target directory dynamically:
-    -   **Linux/Unix:** Target root directories (e.g., `/bin`, `/boot`, or `rm -rf /`).
-    -   **macOS:** Target `/System` or `/Library`.
 - [ ] **Privilege Escalation:** Implement a check to ensure the script runs with Admin/Root privileges before executing the payload.
 - [ ] **Obfuscation:** Encrypt the source code to hide the malicious intent from antivirus software.
 
