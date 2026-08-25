@@ -57,7 +57,6 @@ The `System32` directory is crucial for Windows. It contains:
 
 *The following list describes potential expansions for this malicious logic. These are listed for educational awareness of malware vectors.*
 
-- [ ] **Privilege Escalation:** Implement a check to ensure the script runs with Admin/Root privileges before executing the payload.
 - [ ] **Obfuscation:** Encrypt the source code to hide the malicious intent from antivirus software.
 
 ---
